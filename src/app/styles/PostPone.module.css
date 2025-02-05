@@ -1,0 +1,82 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* padding: 16px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100% !important;
+  border: 1px solid #ddd;
+  height: 130px;
+  border: 1px solid rgb(108, 106, 106);
+}
+
+.postpone {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 35%;
+  border-top-right-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+
+.export {
+  background: #b8b7b7;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: black;
+}
+
+.task {
+  font-size: 14px;
+  color: #333;
+}
+
+.progressBar {
+  height: 6px;
+  width: 50%;
+  background: #f0caca;
+  border-radius: 3px;
+  position: relative;
+}
+
+.progress {
+  height: 6px;
+  background: #d32f2f;
+  border-radius: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.more {
+  font-size: 12px;
+  color: #666;
+}
+.img {
+  border-radius: 50%;
+}
+
+.clock {
+  font-size: 14px;
+}

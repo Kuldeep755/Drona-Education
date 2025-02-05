@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main {
+    flex-grow: 1;
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  
