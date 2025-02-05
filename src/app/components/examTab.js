@@ -1,39 +1,9 @@
 import styles from "../styles/ExamTabs.module.css";
 import PostPone from "../components/postpone";
+import Image from "next/image";
 
 export default function ExamTabs({ activeTab }) {
-  const exams = [
-    {
-      status: "Exam Conducted",
-      subjectCode: "4110343181",
-      subject: "Introduction to Functional English",
-      examDate: "01-01-2025",
-      totalStudents: 58,
-      presentStudents: 52,
-      absentStudents: 2,
-      marked: false,
-    },
-    {
-      status: "Exam not Conducted",
-      subjectCode: "4110343181",
-      subject: "Introduction to Functional English",
-      examDate: "01-01-2025",
-      totalStudents: 60,
-      presentStudents: 55,
-      absentStudents: 5,
-      marked: false,
-    },
-    {
-      status: "Exam Conducted",
-      subjectCode: "4110343181",
-      subject: "Introduction to Functional English",
-      examDate: "01-01-2025",
-      totalStudents: 62,
-      presentStudents: 57,
-      absentStudents: 5,
-      marked: true,
-    },
-  ];
+  
   return (
     <div className={styles.examContainer}>
       {activeTab === "Overview" && <h1>Welcome to the Overview Section</h1>}
@@ -58,10 +28,12 @@ export default function ExamTabs({ activeTab }) {
           <div className={styles.div}></div>
           <div className={styles.examInfo}>
             <div className={styles.universityDetails}>
-              <img
+              <Image
                 src="https://picsum.photos/200/100"
                 alt="University Logo"
                 className={styles.logo}
+                height={100}
+                width={100}
               />
 
               <div className={styles.detailsBox}>
@@ -137,7 +109,7 @@ export default function ExamTabs({ activeTab }) {
                 4 Students remain for mark attendance
               </p>
               <button className={styles.attendanceButton}>
-                Mark / Edit Student's Attendance
+                Mark / Edit Student Attendance
               </button>
             </div>
           </div>
